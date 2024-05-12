@@ -1,0 +1,7 @@
+1) find what directive your in: Code or Data
+2) Start at address 0
+3) Ignore comments -> they add 0 address
+4) Assign to a label the next address similar to what would happen with a instruction, but when the next instruction comes, dont add from the label address
+5) If its an instruction, add the 4 if the previous instruction was in .code
+    add 8 if the previous instruction was in .data
+    keep the same value if the previous item was a label
